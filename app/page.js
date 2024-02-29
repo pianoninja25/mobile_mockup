@@ -1,6 +1,10 @@
 'use client'
 
 import { useEffect, useState } from "react";
+import { HiWifi } from "react-icons/hi2";
+import { PiDevicesLight } from "react-icons/pi";
+import { GiWifiRouter } from "react-icons/gi";
+import { FaUsers } from "react-icons/fa";
 
 export default function Home() {
 
@@ -33,10 +37,10 @@ export default function Home() {
       {/* MIDDLE */}
       <div className="px-10 py-4">
         <div className="grid justify-center gap-6 w-full h-full text-center px-10 py-2 rounded-xl border-white border bg-gradient-to-t from-transparent to-white/50">
-          <div>🛜 zero cool is online</div>
+          <div className="flex items-center gap-2"><HiWifi /> zero cool is online</div>
           <div className="flex justify-between">
             <div>
-              <div>LOGO</div>
+              <div><HiWifi /></div>
               <div>ONLINE</div>
               <div>STATUS</div>
             </div>
@@ -52,27 +56,68 @@ export default function Home() {
       {/* FOOTER */}
       <div className="py-8 px-2 my-4 rounded-t-3xl bg-slate-200 min-h-80">
         <div className="grid">
-          <div className="flex justify-evenly">
-            <div className="w-[11rem] h-[6rem] rounded-lg bg-slate-100">
-              LEFT
+
+          <div className="flex justify-evenly gap-2 mx-4">
+            <div className="grid items-center w-full h-[6rem] rounded-lg bg-slate-100">
+              <div className="flex justify-evenly items-center">
+                <div className="grid gap-1">
+                  <h1 className="font-ioh1 text-slate-500 text-sm">WI-FI</h1>
+                  <h1>zero cool</h1>
+                </div>
+                <div><HiWifi size={30} color="#32bcad"/></div>
+              </div>
             </div>
-            <div className="w-[11rem] h-[6rem] rounded-lg bg-slate-100">
-              RIGHT
+
+
+
+            <div className="grid items-center w-full h-[6rem] rounded-lg bg-slate-100">
+              <div className="flex justify-evenly items-center">
+                <div className="grid gap-1">
+                  <h1 className="font-ioh1 text-slate-500 text-sm">DEVICES</h1>
+                  <h1>5 Connected</h1>
+                </div>
+                <div><PiDevicesLight size={30} color="#32bcad"/></div>
+              </div>
             </div>
           </div>
-          <div className="bg-slate-100 my-4 mx-2">
-            <div className="p-2">PAUSE WIFI ACCESS</div>
+
+
+          <div className="bg-slate-100 my-4 mx-4 py-2">
+            <h1 className="font-ioh1 text-slate-500 text-sm">PAUSE WIFI ACCESS</h1>
             <div className="p-2">ALL DEVICES</div>
             <div className="p-2">BOTTOM</div>
           </div>
-          <div className="flex justify-evenly">
-            <div className="w-[11rem] h-[6rem] rounded-lg bg-slate-100">
-              GUESTS
+          
+          
+
+
+          {/* 3 */}
+          <div className="flex justify-evenly gap-2 mx-4">
+            <div className="grid items-center w-full h-[6rem] rounded-lg bg-slate-100">
+              <div className="flex justify-evenly items-center">
+                <div className="grid gap-1">
+                  <h1 className="font-ioh1 text-slate-500 text-sm">WI-FI</h1>
+                  <h1>zero cool</h1>
+                </div>
+                <div><FaUsers size={30} color="#32bcad"/></div>
+              </div>
             </div>
-            <div className="w-[11rem] h-[6rem] rounded-lg bg-slate-100">
-              WI-FI COVERAGE
+
+
+
+            <div className="grid items-center w-full h-[6rem] rounded-lg bg-slate-100">
+              <div className="flex justify-evenly items-center">
+                <div className="grid gap-1">
+                  <h1 className="font-ioh1 text-slate-500 text-sm">DEVICES</h1>
+                  <h1>5 Connected</h1>
+                </div>
+                <div><PiDevicesLight size={30} color="#32bcad"/></div>
+              </div>
             </div>
           </div>
+
+
+          {/* 4 */}
           <div>4</div>
         </div>
       </div>
